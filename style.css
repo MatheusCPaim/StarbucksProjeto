@@ -113,8 +113,6 @@ body {
     width: auto;
 }
 
-
-
 .textimgright {
     grid-column: 2 / 3 ;
     grid-row: 1 / 3;
@@ -148,6 +146,7 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     width: 600px;
+    margin-right: 20px;
 }
 .bottomarea1 {
     margin-top: 20px;
@@ -163,4 +162,267 @@ body {
 .button1:hover {
     background-color: #999999;
 }
- 
+
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 970px;  
+    width: auto;
+}
+
+.textimgrightarea2 {
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 3;
+    background-image: url(Imagens/f3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imgbottomarea2 {
+    background-size: cover;
+    background-image: url(Imagens/f4.jpg);
+    background-position: center;
+    height: 450px;
+    
+}
+.line1 {
+    border: 10px solid #117050;
+    width: 150px;
+    margin-top: 40px;
+}
+.tituloarea2 {
+    width: 600px;
+    font-size: 20px;
+}
+.gagacit  {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+.gagatext {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    margin-right: 20px;
+}
+.bottomarea1 {
+    margin-top: 20px;
+}
+.button1 {
+    background-color: transparent;
+    border: 2px solid #999999; 
+    font-size: 20px;  
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.button1:hover {
+    background-color: #999999;
+}
+.area3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas do mesmo tamanho */
+    grid-template-areas: "area3pt1 area3pt2";
+    width: 100%;
+    min-height: 100vh; /* ocupa toda a altura da tela */
+}
+.tituloarea3 {
+font-size: 30px;
+}
+.area3pt1 {
+    
+    padding: 80px;
+    background-image: url('Imagens/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.area3pt2 {
+    grid-area: area3pt2;
+    background-image: url('Imagens/f5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.tituloarea3 {
+    font-size: 20px;
+}
+.gagatextare3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+}
+.area4 {
+    display: grid;
+    grid-template-areas: "area3pt1 area3pt2";
+    grid-template-columns: 1fr, 2fr;
+    background-color: #d6d4d4;
+}
+.containerarea4 {
+    max-width: 1140px;
+    align-items: center;
+    margin-left: 50px;
+    padding: 80px;
+}
+.area5 {
+    background-color: #d6d4d4;
+}
+.area5img {
+    background: url(Imagens/bg4.jpg) ;
+    align-items: center;
+    background-color: #d6d4d4;
+    background-position: cover;
+    background-size: cover;
+    width: 1140px;
+    height: 500px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    align-self: center;
+}
+footer a {
+    color: white;
+}
+
+/* ----------------------------- */
+/* 🌐 RESPONSIVIDADE GERAL */
+/* ----------------------------- */
+
+/* Tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+  .container,
+  .containerarea4 {
+    margin-left: 40px;
+    padding: 40px;
+  }
+
+  .text, .tituloarea1, .gagatext {
+    width: 100%;
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .h1 {
+    font-size: 60px;
+  }
+
+  .banner--imagens img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .area1,
+  .area2,
+  .area3 {
+    grid-template-columns: 1fr; /* uma coluna só */
+    grid-template-areas: none;
+  }
+
+  .textimgright,
+  .textimgrightarea2,
+  .area3pt2 {
+    min-height: 400px;
+  }
+
+  .area3pt1 {
+    padding: 40px;
+  }
+
+  .area5img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Celulares e telas pequenas (até 768px) */
+@media (max-width: 768px) {
+  .containerheader {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .headright {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header--search input {
+    max-width: 180px;
+  }
+
+  .h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .banner--imagens {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .banner--imagens img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .area3pt1,
+  .area3pt2 {
+    background-size: contain;
+    background-position: center;
+  }
+
+  footer {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 14px;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 28px;
+  }
+
+  .gagatext,
+  .tituloarea1,
+  .tituloarea2 {
+    font-size: 16px;
+  }
+
+  .button1 {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .area5img {
+    height: 300px;
+  }
+}
