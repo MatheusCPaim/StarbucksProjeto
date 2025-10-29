@@ -109,32 +109,24 @@ body {
 .area1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+    max-height: 970px;  
+    width: auto;
 }
-.texarea1 {
-    max-height: 0px;
-    
-}
+
+
+
 .textimgright {
-    
-    
     grid-column: 2 / 3 ;
     grid-row: 1 / 3;
     background-image: url(Imagens/f1.jpg);
     background-size: cover;
-    width: 100%;
-    height:900px;
     background-position: center;
 }
 .imgbottom {
-  background-image: url(Imagens/f2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-    width: 100%;
-  height: auto;
-}
-
+    background-size: cover;
+    background-image: url(Imagens/f2.jpg);
+    background-position: center;
+    height: 450px;
     
 }
 .line1 {
@@ -159,7 +151,6 @@ body {
 }
 .bottomarea1 {
     margin-top: 20px;
-    
 }
 .button1 {
     background-color: transparent;
@@ -167,7 +158,9 @@ body {
     font-size: 20px;  
     cursor: pointer;
     padding: 10px 20px;
+    margin-bottom: 20px;
 }
 .button1:hover {
     background-color: #999999;
 }
+ 
