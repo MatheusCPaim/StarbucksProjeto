@@ -127,9 +127,14 @@ body {
     background-position: center;
 }
 .imgbottom {
-    background-position: center;
-    background-size: cover;
-    background-image: url(Imagens/f2.jpg);
+  background-image: url(Imagens/f2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    width: 100%;
+  height: auto;
+}
+
     
 }
 .line1 {
